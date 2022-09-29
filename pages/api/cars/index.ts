@@ -3,7 +3,7 @@ import NextCors from "nextjs-cors";
 
 import query from "../../../db";
 
-export default async function getCarByID(
+export default async function getAllCars(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
@@ -14,11 +14,9 @@ export default async function getCarByID(
   });
 
   const { method } = req;
-  const { id } = req.query;
-  const ID = id as string;
 
   if (method === "GET") {
-    const data = await query("SELECT * FROM cars WHERE Id = $1;", [ID]);
+    const data = await query("SELECT * FROM cars;");
 
     return {
       status: 200,
