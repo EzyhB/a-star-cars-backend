@@ -44,7 +44,7 @@ var populateCarTable = function () { return __awaiter(void 0, void 0, void 0, fu
             var data;
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0: return [4 /*yield*/, (0, __1["default"])("INSERT INTO cars (id, name, subname, price, miles, reg, trans, fuel, seats, engine, body_type, exterior_color, drive_type, reg_num, previous_owners, num_of_keys, top_speed, acceleration, power) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19)", [
+                    case 0: return [4 /*yield*/, (0, __1["default"])("INSERT INTO cars (id, name, sub_name, price, miles, reg, trans, fuel, seats, engine, body_type, exterior_color, drive_type, reg_num, previous_owners, num_of_keys, top_speed, acceleration, power) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19)", [
                             el.id,
                             el.name,
                             el.subName,
