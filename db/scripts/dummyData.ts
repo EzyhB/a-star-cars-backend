@@ -148,4 +148,51 @@ const carImageDB = [
   },
 ];
 
+const postman = {
+  name: "Ford Kuga",
+  subName: "2.5L ST-Line X EcoBoost Duratec",
+  price: 31000,
+  miles: 15123,
+  reg: 2020,
+  trans: "Automatic",
+  fuel: "Petrol",
+  seats: 5,
+  engine: 2.5,
+  bodyType: "5 door SUV",
+  exteriorColour: "Grey",
+  driveType: "Front wheel drive",
+  regNum: "YR20 YXU",
+  previousOwners: 1,
+  numOfKeys: 2,
+  topSpeed: 125,
+  acceleration: 9.2,
+  power: 222,
+  image: {
+    image1:
+      "https://cdn.discordapp.com/attachments/786789211315109927/1025101243712028692/unknown.png",
+    image2:
+      "https://cdn.discordapp.com/attachments/786789211315109927/1025101267749572668/unknown.png",
+    image3:
+      "https://cdn.discordapp.com/attachments/786789211315109927/1025101289518022656/unknown.png",
+    image4:
+      "https://cdn.discordapp.com/attachments/786789211315109927/1025101308723744808/unknown.png",
+    image5:
+      "https://cdn.discordapp.com/attachments/786789211315109927/1025101323722563654/unknown.png",
+    image6:
+      "https://cdn.discordapp.com/attachments/786789211315109927/1025101345885274132/unknown.png",
+    image7:
+      "https://cdn.discordapp.com/attachments/786789211315109927/1025101361760718888/unknown.png",
+    image8:
+      "https://cdn.discordapp.com/attachments/786789211315109927/1025101380467294280/unknown.png",
+    image9:
+      "https://cdn.discordapp.com/attachments/786789211315109927/1025101396946731048/unknown.png",
+    image10:
+      "https://cdn.discordapp.com/attachments/786789211315109927/1025101421743456376/unknown.png",
+    image11:
+      "https://cdn.discordapp.com/attachments/786789211315109927/1025101437371428945/unknown.png",
+    image12:
+      "https://cdn.discordapp.com/attachments/786789211315109927/1025101456010919988/unknown.png",
+  },
+};
+
 export { carDB, carImageDB };
