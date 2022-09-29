@@ -18,11 +18,11 @@ export default async function getCarByID(
   const ID = id as string;
 
   if (method === "GET") {
-    const data = await query("SELECT * FROM cars WHERE Id = $1;", [ID]);
+    const data = await query("SELECT * FROM car_images WHERE Id = $1;", [ID]);
 
     return {
       status: 200,
-      message: "Get car by ID operation successful",
+      message: "Get all car images by ID operation successful",
       result: res.json(data.rows),
     };
   }
