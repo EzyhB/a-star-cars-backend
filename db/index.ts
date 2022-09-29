@@ -1,9 +1,9 @@
 import { Pool } from "pg";
 
-const connectionString = process.env.heroku_uri;
+const connectionString1 = process.env.heroku_uri;
 
 const pool = new Pool({
-  connectionString,
+  connectionString: connectionString1,
   ssl: { rejectUnauthorized: false },
 });
 

@@ -1,9 +1,9 @@
 "use strict";
 exports.__esModule = true;
 var pg_1 = require("pg");
-var connectionString = process.env.heroku_uri;
+var connectionString1 = process.env.heroku_uri;
 var pool = new pg_1.Pool({
-    connectionString: connectionString,
+    connectionString: connectionString1,
     ssl: { rejectUnauthorized: false }
 });
 var query = function (text, params) {
