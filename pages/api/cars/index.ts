@@ -16,7 +16,7 @@ export default async function getAllCars(
   const { method } = req;
 
   if (method === "GET") {
-    const data = await query("SELECT * FROM cars;");
+    const data = await query("SELECT * FROM cars ORDER BY created DESC;");
 
     return {
       status: 200,
