@@ -74,6 +74,11 @@ const Home: NextPage = () => {
         image12: image12.value,
       },
     };
+    fetch(`https://a-star-cars-backend.vercel.app/api/car/${id}`, {
+      method: "POST",
+      headers: { "Content-type": "application/json" },
+      body: JSON.stringify(postData),
+    }).then(() => form.reset());
   };
   return (
     <div className={styles.container} onSubmit={(e) => handleSubmit(e)}>
