@@ -3,6 +3,8 @@ const carDB = [
     id: "radomIDGen2000",
     name: "BMW 2 Series Gran Coupe",
     subName: "1.5L M Sport 218i",
+    image:
+      "https://cdn.discordapp.com/attachments/786789211315109927/1023647229191397456/unknown.png",
     price: 31800,
     miles: 2597,
     reg: 2022,
@@ -24,6 +26,8 @@ const carDB = [
     id: "radomIDGen2001",
     name: "Audi e-tron",
     subName: "S line",
+    image:
+      "https://cdn.discordapp.com/attachments/786789211315109927/1025036196226797628/unknown.png",
     price: 56250,
     miles: 12494,
     reg: 2020,
@@ -45,6 +49,8 @@ const carDB = [
     id: "radomIDGen2002",
     name: "Mercedes-Benz CLA Class",
     subName: "2L AMG CLA45",
+    image:
+      "https://cdn.discordapp.com/attachments/786789211315109927/1025037978818592899/unknown.png",
     price: 33850,
     miles: 22285,
     reg: 2018,
