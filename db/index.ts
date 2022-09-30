@@ -1,6 +1,6 @@
 import { Pool } from "pg";
 
-const connectionString1 = process.env.heroku_uri;
+const connectionString1 = process.env.new_uri;
 
 const pool = new Pool({
   connectionString: connectionString1,

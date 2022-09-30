@@ -1,11 +1,13 @@
 import type { NextPage } from "next";
 import { SyntheticEvent } from "react";
+import { uuid } from "uuidv4";
 
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
   const handleSubmit = (event: SyntheticEvent) => {
     event.preventDefault();
+    const id = uuid();
     const form = event.target as HTMLFormElement;
     const name = form[0] as HTMLInputElement;
     const subName = form[1] as HTMLInputElement;
@@ -37,7 +39,41 @@ const Home: NextPage = () => {
     const image10 = form[27] as HTMLInputElement;
     const image11 = form[28] as HTMLInputElement;
     const image12 = form[29] as HTMLInputElement;
-    console.log(name.value, image12.value);
+
+    const postData = {
+      name: name.value,
+      subName: subName.value,
+      price: price.value,
+      miles: miles.value,
+      reg: reg.value,
+      trans: trans.value,
+      fuel: fuel.value,
+      seats: seats.value,
+      engine: engine.value,
+      bodyType: bodyType.value,
+      exteriorColour: exteriorColor.value,
+      driveType: driveType.value,
+      regNum: regNum.value,
+      previousOwners: previousOwner.value,
+      numOfKeys: numOfKeys.value,
+      topSpeed: topSpeed.value,
+      acceleration: acceleration.value,
+      power: power.value,
+      image: {
+        image1: image1.value,
+        image2: image2.value,
+        image3: image3.value,
+        image4: image4.value,
+        image5: image5.value,
+        image6: image6.value,
+        image7: image7.value,
+        image8: image8.value,
+        image9: image9.value,
+        image10: image10.value,
+        image11: image11.value,
+        image12: image12.value,
+      },
+    };
   };
   return (
     <div className={styles.container} onSubmit={(e) => handleSubmit(e)}>
