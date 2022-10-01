@@ -23,7 +23,7 @@ export default async function getAllCars(
 
   if (method === "GET") {
     const data = await query(
-      "SELECT * FROM cars WHERE name ILIKE $1 AND lower(trans) ILIKE $2 AND reg >= $3;",
+      "SELECT * FROM cars WHERE name ILIKE $1 AND trans ILIKE $2 AND reg >= $3;",
       [name, trans, reg]
     );
 
