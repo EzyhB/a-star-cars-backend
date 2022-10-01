@@ -17,8 +17,8 @@ export default async function getAllCars(
 
   const params = req.query;
 
-  const name = params.name ? (params.name as string) : "";
-  const trans = params.trans ? (params.trans as string) : "";
+  const name = params.name ? (`%${params.name}%` as string) : "%%";
+  const trans = params.trans ? (`%${params.trans}%` as string) : "%%";
   const reg = params.reg ? (params.reg as string) : 0;
 
   if (method === "GET") {
