@@ -30,7 +30,7 @@ export default async function getAllCars(
     return {
       status: 200,
       message: "Get all cars operation successful",
-      result: res.json(data.rows),
+      result: res.json(params),
     };
   }
 }
