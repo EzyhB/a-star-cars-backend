@@ -82,4 +82,9 @@ export default async function getCarByID(
       result: res.json(data.rows),
     };
   }
+
+  if (method == "DELETE") {
+    await query("DELETE FROM cars WHERE id = $1", [ID]);
+    await query("DELETE FROM car_images WHERE id = $1", [ID]);
+  }
 }
