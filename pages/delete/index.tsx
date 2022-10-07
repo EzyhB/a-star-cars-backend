@@ -51,9 +51,16 @@ export default function Delete() {
   };
 
   return (
-    <div>
+    <div style={{ display: "flex" }}>
       {Data.map((el) => (
-        <div key={el.id}>
+        <div
+          key={el.id}
+          style={{
+            maxWidth: "500px",
+            border: "1px solid black",
+            margin: "0.5rem",
+          }}
+        >
           <div>{el.name}</div>
           <img src={el.image} alt={el.name} style={{ maxWidth: "400px" }} />
           <button onClick={() => handleClick(el.id)}>delete</button>
