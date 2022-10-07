@@ -47,6 +47,7 @@ export default function Delete() {
     await fetch(`https://a-star-cars-backend.vercel.app/api/car/${id}`, {
       method: "DELETE",
     });
+    document.location.reload();
   };
 
   return (
