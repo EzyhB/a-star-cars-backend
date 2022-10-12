@@ -39,6 +39,34 @@ const Home: NextPage = () => {
     const image10 = form[27] as HTMLInputElement;
     const image11 = form[28] as HTMLInputElement;
     const image12 = form[29] as HTMLInputElement;
+    const image13 = form[30] as HTMLInputElement;
+    const image14 = form[31] as HTMLInputElement;
+    const image15 = form[32] as HTMLInputElement;
+    const image16 = form[33] as HTMLInputElement;
+    const image17 = form[34] as HTMLInputElement;
+    const image18 = form[35] as HTMLInputElement;
+    const image19 = form[36] as HTMLInputElement;
+    const image20 = form[37] as HTMLInputElement;
+    const image21 = form[38] as HTMLInputElement;
+    const image22 = form[39] as HTMLInputElement;
+    const image23 = form[40] as HTMLInputElement;
+    const image24 = form[41] as HTMLInputElement;
+    const image25 = form[42] as HTMLInputElement;
+    const image26 = form[43] as HTMLInputElement;
+    const image27 = form[44] as HTMLInputElement;
+    const image28 = form[45] as HTMLInputElement;
+    const image29 = form[46] as HTMLInputElement;
+    const image30 = form[47] as HTMLInputElement;
+    const image31 = form[48] as HTMLInputElement;
+    const image32 = form[49] as HTMLInputElement;
+    const image33 = form[50] as HTMLInputElement;
+    const image34 = form[51] as HTMLInputElement;
+    const image35 = form[52] as HTMLInputElement;
+    const image36 = form[53] as HTMLInputElement;
+    const image37 = form[54] as HTMLInputElement;
+    const image38 = form[55] as HTMLInputElement;
+    const image39 = form[56] as HTMLInputElement;
+    const image40 = form[57] as HTMLInputElement;
 
     const postData = {
       name: name.value,
@@ -72,6 +100,34 @@ const Home: NextPage = () => {
         image10: image10.value,
         image11: image11.value,
         image12: image12.value,
+        image13: image13.value,
+        image14: image14.value,
+        image15: image15.value,
+        image16: image16.value,
+        image17: image17.value,
+        image18: image18.value,
+        image19: image19.value,
+        image20: image20.value,
+        image21: image21.value,
+        image22: image22.value,
+        image23: image23.value,
+        image24: image24.value,
+        image25: image25.value,
+        image26: image26.value,
+        image27: image27.value,
+        image28: image28.value,
+        image29: image29.value,
+        image30: image30.value,
+        image31: image31.value,
+        image32: image32.value,
+        image33: image33.value,
+        image34: image34.value,
+        image35: image35.value,
+        image36: image36.value,
+        image37: image37.value,
+        image38: image38.value,
+        image39: image39.value,
+        image40: image40.value,
       },
     };
     fetch(`https://a-star-cars-backend.vercel.app/api/car/${id}`, {
@@ -113,6 +169,34 @@ const Home: NextPage = () => {
         <input type="text" placeholder="image 10 (URL)"></input>
         <input type="text" placeholder="image 11 (URL)"></input>
         <input type="text" placeholder="image 12 (URL)"></input>
+        <input type="text" placeholder="image 13 (URL)"></input>
+        <input type="text" placeholder="image 14 (URL)"></input>
+        <input type="text" placeholder="image 15 (URL)"></input>
+        <input type="text" placeholder="image 16 (URL)"></input>
+        <input type="text" placeholder="image 17 (URL)"></input>
+        <input type="text" placeholder="image 18 (URL)"></input>
+        <input type="text" placeholder="image 19 (URL)"></input>
+        <input type="text" placeholder="image 20 (URL)"></input>
+        <input type="text" placeholder="image 21 (URL)"></input>
+        <input type="text" placeholder="image 22 (URL)"></input>
+        <input type="text" placeholder="image 23 (URL)"></input>
+        <input type="text" placeholder="image 24 (URL)"></input>
+        <input type="text" placeholder="image 25 (URL)"></input>
+        <input type="text" placeholder="image 26 (URL)"></input>
+        <input type="text" placeholder="image 27 (URL)"></input>
+        <input type="text" placeholder="image 28 (URL)"></input>
+        <input type="text" placeholder="image 29 (URL)"></input>
+        <input type="text" placeholder="image 30 (URL)"></input>
+        <input type="text" placeholder="image 31 (URL)"></input>
+        <input type="text" placeholder="image 32 (URL)"></input>
+        <input type="text" placeholder="image 33 (URL)"></input>
+        <input type="text" placeholder="image 34 (URL)"></input>
+        <input type="text" placeholder="image 35 (URL)"></input>
+        <input type="text" placeholder="image 36 (URL)"></input>
+        <input type="text" placeholder="image 37 (URL)"></input>
+        <input type="text" placeholder="image 38 (URL)"></input>
+        <input type="text" placeholder="image 39 (URL)"></input>
+        <input type="text" placeholder="image 40 (URL)"></input>
         <button type="submit">Submit</button>
       </form>
     </div>
