@@ -1,6 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import NextCors from "nextjs-cors";
-
 import query from "../../../db";
 
 export default async function getCarByID(
