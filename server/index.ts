@@ -9,10 +9,9 @@ const dev = process.env.NODE_ENV !== "production";
 const app = next({ dev });
 const handle = app.getRequestHandler();
 
+const server = express();
+server.use(cors({ origin: "*" }));
 app.prepare().then(() => {
-  const server = express();
-
-  server.use(cors({ origin: "*" }));
   server.use(bodyParser.json({ limit: "infinity" }));
   server.use("/api", api);
 
