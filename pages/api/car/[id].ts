@@ -32,7 +32,7 @@ export default async function getCarByID(
     console.log(el);
 
     const data = await query(
-      "INSERT INTO cars (id, name, sub_name, price, miles, reg, trans, fuel, seats, engine, body_type, exterior_color, drive_type, reg_num, previous_owners, num_of_keys, top_speed, acceleration, power) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19)",
+      "INSERT INTO cars (id, name, sub_name, price, miles, reg, trans, fuel, seats, engine, body_type, exterior_color, drive_type, reg_num, previous_owners, num_of_keys, top_speed, acceleration, power, num_of_images) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, 20)",
       [
         ID,
         el.name,
@@ -53,6 +53,7 @@ export default async function getCarByID(
         el.topSpeed,
         el.acceleration,
         el.power,
+        el.num_of_images,
       ]
     );
 
